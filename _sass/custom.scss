@@ -25,5 +25,9 @@
 }
 #post-page pre.highlight{
 	border-left: 10px solid #008A3C !important;
-	background-color: rgba(0, 138, 60, 0.05) !important;
+    padding: 1em 1.4em;
+    background:url(../img/template/blueprint-dark.png) top center rgba(0, 138, 60, 0.05);
+}
+#post-page code{
+	background-color:transparent;
 }
