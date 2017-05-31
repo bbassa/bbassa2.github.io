@@ -1,10 +1,9 @@
 ---
-title: Jekyll GitHub에서 시작하기
+title: Jekyll quick start on GitHub Pages
 layout: post
 category: blog
 tags: [blog, jekyll, start]
 ---
-## Jekyll quick start on GitHub Pages
 1. Repository 만들기
 ``username``.github.io
 2. Repository Clone하기
