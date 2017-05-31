@@ -13,10 +13,17 @@
 #post-page time.by-line{
     font-weight: 500;
     font-size: 0.7em;	
-	color: #f0f0f0;
+	color: #c0c0c0;
+}
+#post-page .highlighter-rouge{
+	padding: 0 1.35em;
 }
 
 #post-page blockquote{
+	border-left: 10px solid #008A3C !important;
+	background-color: rgba(0, 138, 60, 0.05) !important;
+}
+#post-page pre.highlight{
 	border-left: 10px solid #008A3C !important;
 	background-color: rgba(0, 138, 60, 0.05) !important;
 }
