@@ -2,12 +2,20 @@
 
 // -- Put custom style under this point -- //
 #post-page h1{
-    color: #007733;
+    color: #008A3C;
     font-weight: 700;
 	font-size: 2em;
 }
 #post-page h2{
-    color: #008A3C;
-    font-weight: 500;
+    color: ##6a9fb5;
+    font-weight: 700;
 	font-size: 1.4em;	
+}
+#post-page time.by-line{
+    font-weight: 500;
+    font-size: 0.7em;	
+}
+
+blockquote{
+	border-left:10px solid #008A3C !important;
 }
