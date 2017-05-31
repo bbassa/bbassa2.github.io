@@ -15,6 +15,10 @@
     font-size: 0.7em;	
 	color: #c0c0c0;
 }
+#post-page {
+	font-size:14px;
+	font-family:dotum;
+}
 #post-page .highlighter-rouge{
 	padding: 0 1.35em;
 }
@@ -22,7 +26,9 @@
 #post-page blockquote{
 	border-left: 7px solid #008A3C !important;
 	background-color: rgba(0, 138, 60, 0.05) !important;
-	border-radius:0;
+	border-radius: 0;
+	font-style: normal;
+	font-size:0.9em;
 }
 #post-page pre.highlight{
 	border-left: 7px solid #558abb !important;
@@ -31,4 +37,5 @@
 }
 #post-page code{
 	background-color:transparent;
+	font-size:0.8em;
 }
