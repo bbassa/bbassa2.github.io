@@ -16,8 +16,8 @@ tags: [blog, jekyll, start]
 > Tools > Command Pallete - Ctrl+Shift+P
 
 ## Step 4 : Sublime Text 3 에 Jekyll 플러그인 설치
-> ``Project`` > ``Save Project As`` 로 저장
-> ``Proejct``>``Edit Project``
+> Project > Save Project As 로 저장
+> Proejct > Edit Project
 
 ```json
 {
