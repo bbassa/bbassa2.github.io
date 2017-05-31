@@ -5,13 +5,15 @@ category: blog
 tags: [blog, jekyll, start]
 ---
 ## Step 1 : Repository 만들기
-``username``.github.io
+> username.github.io
 
 ## Step 2 : Repository Clone하기
-> git clone https://github.com/username/username.github.io
+   ```bash
+   git clone https://github.com/username/username.github.io
+   ```
 
 ## Step 3 : Settings 에서 Theme 선택
-> ``Tools`` > ``Command Pallete`` - ``Ctrl+Shift+P``
+> Tools > Command Pallete - Ctrl+Shift+P
 
 ## Step 4 : Sublime Text 3 에 Jekyll 플러그인 설치
 > ``Project`` > ``Save Project As`` 로 저장
@@ -41,7 +43,7 @@ tags: [blog, jekyll, start]
 
 ## Step 5 : 새로운 post 작성
  - 우클릭 (컨텍스트 메뉴)
- - ``Jekyll``>``New Post``
+ - > Jekyll > New Post
 
 ## Step 6 : GitHub에 반영하기
 ```bash
