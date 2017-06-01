@@ -1,5 +1,5 @@
 ---
-title: git - Command Line 사용법
+title: Git - Command Line 사용법
 layout: post
 category: git
 tags: [git, vcs, tools]
