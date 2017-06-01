@@ -2,16 +2,16 @@
 
 // -- Put custom style under this point -- //
 #post-page h1{
-	font-family: 'Jeju Gothic', serif;
+	font-family: 'Noto Sans KR', sans-serif;
     color: #008A3C;
     font-weight: 700;
 }
 #post-page h2{
-	font-family: 'Jeju Gothic', serif;
+	font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
 }
 #post-page h3{
-	font-family: 'Jeju Gothic', serif;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 #post-page time.by-line{
     font-weight: 500;
@@ -19,6 +19,6 @@
 	color: #c0c0c0;
 }
 #post-page blockquote, #post-page .highlight code{
-	font-family: 'Nanum Gothic Coding', serif;
+	font-family: consolas;
 	font-size:0.85em;
 }
