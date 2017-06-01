@@ -1,9 +1,6 @@
-/*
- * Emerald is a simple blog theme built for Jekyll.
- */
-
-/*- Base reset -*/
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -27,9 +24,6 @@ $text-color: #222222;
 html {
 	background-color: $background-color;
 	font-size: 16px;
-	@media (min-width: 940px) {
-		font-size: 18px;
-	}
 	line-height: 1.5;
 	color: $text-color;
 }
