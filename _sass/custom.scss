@@ -34,7 +34,7 @@
 #post-page .highlighter-rouge{
 	border-left: 7px solid #558abb !important;
     background:url(../img/template/blueprint-dark.png) top center #fafbfc;
-
+	overflow-x: auto;
 }
 
 #post-page blockquote {
@@ -44,8 +44,6 @@
 }
 #post-page pre.highlight {
 	display: inline-block;
-	overflow-x: auto;
-
 }
 #post-page pre.highlight code{
 	background-color:transparent;
