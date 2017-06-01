@@ -1,0 +1,152 @@
+---
+title: MariaDB 설치하기
+layout: post
+category: linux
+tags: [linux, ubuntu, mariadb, database]
+---
+
+# MariaDB 설치
+
+## 다운로드 페이지
+[다운로드 페이지](https://downloads.mariadb.org/mariadb/repositories/#mirror=kaist)
+- 다운로드 링크에서 맞는 타입의 distro를 선택하면 설치법이 표시된다.
+
+## 1. 키설치, repository 설정
+```
+sudo apt-get install software-properties-common
+sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+sudo add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://ftp.kaist.ac.kr/mariadb/repo/10.1/ubuntu xenial main'
+```
+
+## 2. 설치
+```
+sudo apt update
+sudo apt install mariadb-server
+```
+
+## 3. /etc/apt/sources.list 파일 확인
+- 저장소 위치
+
+## 4. 상태 확인
+```
+systemctl status mariadb
+```
+
+## 5. DB 설치후 기본 보안 설정 스크립트 실행
+- 스크립트
+```
+mysql_secure_installation
+```
+
+- 설정 - 용도에 맞게 다음의 설정을 한다.
+```
+- Remove anonymous users? [Y/n] y
+- Disallow root login remotely? [Y/n] y
+- Remove test database and access to it? [Y/n] y
+- Reload privilege tables now? [Y/n] y
+```
+
+## 6. 원격 접속 허용
+
+- 기본파일위치
+
+```
+  * /etc/my.cnf                              (*nix/BSD)
+  * $MYSQL_HOME/my.cnf                       (*nix/BSD) *Most Notably /etc/mysql/my.cnf
+  * SYSCONFDIR/my.cnf                        (*nix/BSD)
+  * DATADIR\my.ini                           (Windows)
+```
+
+- ubuntu 상 위치  
+`/var/lib/mysql` - 프로그램  
+`/etc/mysql/my.cnf` - 설정파일
+
+- my.cnf 의 다음 라인을 comment out 하거나 bind-address를 해당 서버의 주소로 한다.
+
+```
+ [mysqld]
+    ...
+    skip-networking
+    ...
+    bind-address = <some ip-address>
+```
+
+-- firewall 세팅
+```
+sudo ufw allow 3306
+```
+
+## 7. 서버 캐릭터 셋 변경
+- /etc/mysql/conf.d/mariadb.cnf 파일을 다음과 같이 고친다.
+
+```
+# MariaDB-specific config file.
+# Read by /etc/mysql/my.cnf
+
+[client]
+# Default is Latin1, if you need UTF-8 set this (also in server section)
+default-character-set = utf8mb4
+
+[mysqld]
+#
+# * Character sets
+# 
+# Default is Latin1, if you need UTF-8 set all this (also in client section)
+#
+character-set-server  = utf8mb4 
+collation-server      = utf8mb4_unicode_ci 
+#character_set_server   = utf8 
+#collation_server       = utf8_general_ci 
+```
+
+- 개별 DB, TABLE의 캐릭터 셋 변경
+```
+ALTER DATABASE database_name CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+ALTER TABLE table_name CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+## 8. 최초 사용자 관련 SQL
+- DB 정보 보기
+```
+mysql -u root -p
+show databases
+use mysql
+show tables
+desc user
+```
+
+- 사용자 보기
+```
+사용자 보기
+select host, user, password from user;
+```
+
+- 사용자 생성
+```
+create user 'user'@'192.168.0.%' identified by 'password';
+```
+
+- 비밀번호 변경
+```
+UPDATE user SET password=password("1234") WHERE user = 'root';
+FLUSH privileges;
+```
+
+- 권한 부여 - grant로 부여된 권한은 FLUSH privileges 가 필요 없다.
+```
+grant all privileges on *.* to 'user'@'%' identified by 'password' with grant option;
+grant all privileges on DB명.* to 'user'@'host' identified by 'password';
+GRANT SELECT ON db_name.table_name TO 'user'@'host';
+```
+
+- 권한 취소
+```
+revoke all on db_name.* from 'user'@'host';
+```
+
+- 사용자 삭제
+```
+drop user 'user'@'host';
+```
+
+
