@@ -6,7 +6,7 @@ tags: [blog, jekyll, start]
 ---
 GitHub에서 Jekyll 기반의 GitHub Pages를 서비스하고 있다.
 기존의 블로깅 플랫폼의 경우 프로그램 코딩관련 내용을 포스팅하기엔 귀찮은 점들이 몇몇 존재하였다.
-코딩관련 내용을 포스팅하기 위한 프로그래머를 위한 static bloggin platform으로 개발된 Jekyll페이지를 GitHub에서 Hosting 해보자
+코딩관련 내용을 포스팅하기 위한 프로그래머를 위한 static blogging platform으로 개발된 Jekyll페이지를 GitHub에서 Hosting 해보자
 ## Step 1 : Repository 만들기
 > username.github.io
 
