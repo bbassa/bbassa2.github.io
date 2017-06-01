@@ -42,8 +42,8 @@ tags: [blog, jekyll, start]
 ```
 
 ## Step 5 : 새로운 post 작성
- - 우클릭 (컨텍스트 메뉴)
- - > Jekyll > New Post
+ 우클릭 (컨텍스트 메뉴)
+ > Jekyll > New Post
 
 ## Step 6 : GitHub에 반영하기
 ```bash
