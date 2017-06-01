@@ -1,6 +1,8 @@
 ---
 title: git -- Command Line 사용법
 layout: post
+category: git
+tags: [git, vcs, tools]
 ---
 ## 새로운 저장소 만들기
 ```{.sh}
