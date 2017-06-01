@@ -16,8 +16,7 @@
 	color: #c0c0c0;
 }
 #post-page .highlighter-rouge{
-	margin: 1.3334em;
-    padding: 0 1.33334em;
+	margin:10px;
 }
 
 #post-page blockquote{
@@ -27,10 +26,10 @@
 	font-style: normal;
 	font-size:0.7em;
 	font-family:consolas;
+	margin:10px;
 }
 #post-page pre.highlight{
 	border-left: 7px solid #558abb !important;
-    padding: 1em 0;
     background:url(../img/template/blueprint-dark.png) top center #fafbfc;
     overflow-x: auto;
 }
