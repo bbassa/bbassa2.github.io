@@ -5,11 +5,12 @@ category: git
 tags: [git, vcs, tools]
 ---
 ## Snapshot
-- Git은 다른 VCS 들과는 다르게 저장소의 데이터를 스냅샷의 형태로 다룬다. 개념은 아래와 같다.
+Git은 다른 VCS 들과는 다르게 저장소의 데이터를 스냅샷의 형태로 다룬다. 개념은 아래와 같다.
 
-`기존의 VCS들`
+### 기존의 VCS들
 ![image](/uploads/git/git_basic_01.png)
-`Git`
+
+### Git
 ![image](/uploads/git/git_basic_02.png)
 
 ## 특징
