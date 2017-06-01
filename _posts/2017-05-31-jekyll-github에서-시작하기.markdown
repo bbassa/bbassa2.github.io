@@ -8,9 +8,9 @@ tags: [blog, jekyll, start]
 > username.github.io
 
 ## Step 2 : Repository Clone하기
-   ```bash
-   git clone https://github.com/username/username.github.io
-   ```
+```bash
+git clone https://github.com/username/username.github.io
+```
 
 ## Step 3 : Settings 에서 Theme 선택
 > Tools > Command Pallete - Ctrl+Shift+P
