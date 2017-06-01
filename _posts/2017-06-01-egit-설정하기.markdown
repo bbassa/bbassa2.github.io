@@ -28,9 +28,8 @@ Clone a Git repository
 
 ![image](/uploads/git/egit_04.png)
 
-Clone URI - GitHub가 아닌 경우
-
-GitHub - GitHub인 경우
+1. Clone URI - GitHub가 아닌 경우
+2. GitHub - GitHub인 경우
 
 ![image](/uploads/git/egit_05.png)
 
