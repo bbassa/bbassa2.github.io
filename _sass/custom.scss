@@ -21,7 +21,7 @@
 	margin:10px;
 }
 
-#post-page blockquote{
+#post-page blockquote {
 	border-left: 7px solid #008A3C !important;
 	background-color: rgba(0, 138, 60, 0.05) !important;
 	border-radius: 0;
@@ -30,6 +30,7 @@
 	font-family:consolas;
 	margin:10px;
 }
+#post-page blockquote p{padding:15px 0;}
 #post-page pre.highlight{
     overflow-x: auto;
     margin-top: 0;
