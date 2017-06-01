@@ -13,6 +13,9 @@
 #post-page h3{
 	font-family: 'Noto Sans KR', sans-serif;
 }
+#post-page p{
+	margin:1em;
+}
 #post-page time.by-line{
     font-weight: 500;
     font-size: 0.7em;
@@ -35,3 +38,9 @@
 	background-color: rgba(0, 138, 60, 0.05) !important;
 	border-radius: 0;
 }
+#post-page pre.highlight {
+	display: inline-block;
+	overflow-x: auto;
+
+}
+#post-page pre.highlight code{background-color:transparent}
