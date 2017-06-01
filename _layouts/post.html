@@ -6,7 +6,10 @@ layout: default
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
 {% assign post = page %}
 {% if post.tags.size > 0 %}
-    <h3>We have tags</h3>
+    {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+    {% for post_tag in post.tags %}
+        	<span>post_tag</span>
+    {% endfor %}
 {% endif %}	
 
 
