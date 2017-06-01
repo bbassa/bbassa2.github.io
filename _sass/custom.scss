@@ -49,3 +49,26 @@
 	display: inline-block;
 	padding:1em 2em;
 }
+
+.post-tag {
+	text-decoration: none;
+    display: inline-block;
+    background: rgba(0, 138, 60, 0.15);
+    padding: 0 .5rem;
+    margin-right: .5rem;
+    border-radius: 4px;
+    color: #008A3C;
+    font-size: 0.7em;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.post-tag:before {
+    content: "\f02b";
+    font-family: FontAwesome;
+    padding-right: .5em;
+}
+.post-tag:hover {
+    background: #6a9fb5;
+    color: #fff;
+}
