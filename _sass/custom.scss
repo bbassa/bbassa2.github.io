@@ -16,13 +16,13 @@
 	color: #c0c0c0;
 }
 #post-page .highlighter-rouge{
+	border-left: 7px solid #558abb !important;
     background:url(../img/template/blueprint-dark.png) top center #fafbfc;
-	border-left: 7px solid #008A3C !important;
 	margin:10px;
 }
 
 #post-page blockquote{
-
+	border-left: 7px solid #008A3C !important;
 	background-color: rgba(0, 138, 60, 0.05) !important;
 	border-radius: 0;
 	font-style: normal;
@@ -31,7 +31,6 @@
 	margin:10px;
 }
 #post-page pre.highlight{
-	border-left: 7px solid #558abb !important;
     overflow-x: auto;
 }
 #post-page pre.highlight code span{margin-left:20px;}
