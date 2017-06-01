@@ -10,6 +10,9 @@ layout: default
 	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
 {% assign post = page %}
+{% if post.category %}
+			<a href="/category/#category" class="category-tag">{{post.category}}</a>
+{% endif %}
 {% if post.tags.size > 0 %}
     {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
     {% for post_tag in post.tags %}
@@ -17,9 +20,6 @@ layout: default
     {% endfor %}
 {% endif %}	
 
-{% if post.category %}
-			<a href="/category/#category" class="category-tag">{{post.category}}</a>
-{% endif %}	
 
 
 	  </li>
