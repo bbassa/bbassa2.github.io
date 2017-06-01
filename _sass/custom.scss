@@ -38,7 +38,10 @@
     margin-bottom: 0;
     padding-bottom: 7px;
 }
-#post-page pre.highlight code span{margin-left:20px;}
+#post-page pre.highlight code{
+	display:inline-block;
+	padding:0 15px;
+}
 #post-page code{
 	background-color:transparent;
 	font-family:consolas;
