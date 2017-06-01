@@ -1,0 +1,27 @@
+---
+title: Egit - 개발하기
+layout: post
+category: git
+tags: [git, vcs, tools]
+---
+
+## gitlab private 프로젝트 그룹 정책
+- Developer는 protected된 branch (보통은 master) 의 내용을 변경할 수 없다.
+- Master가 되어야 거의 모든 권한을 갖는다.
+- 소스 관리자만 Master로 만들고 개발자는 전부 Developer로 세팅 branch를 만들어 개발하고 branch를 push remote 하고 Merge Requests를 하면 Master가 승인 관리하는 방식
+
+## 프로젝트 관리 흐름
+1. 소스 관리자 - Master
+2. 개발자 - Developer
+3. 개발자는 개발자별 branch를 만들어 개발
+4. 소스는 pull (여기가 현재 아리까리, 매뉴얼에는 자동으로 변경분이 Merge 된다고 나와 있는데 잘 모르겠다.) 로컬에서 merge 후 개발
+5. 개발 소스는 commit and push
+6. Master에 Merge Request
+7. Master는 Merge Request를 승인하고 conflict 발생시 소스 정리)
+
+## new branch
+- `프로젝트이름서 우클릭 > Team > Switch To > New Branch`
+![image](/uploads/git/egit_dev_01.png)
+- 새로운 branch 이름을 입력
+![image](/uploads/git/egit_dev_02.png)
+
