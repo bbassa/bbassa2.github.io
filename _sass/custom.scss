@@ -43,4 +43,9 @@
 	overflow-x: auto;
 
 }
-#post-page pre.highlight code{background-color:transparent}
+#post-page pre.highlight code{
+	background-color:transparent;
+	font-family: consolas;
+	display: inline-block;
+	padding:1em 2em;
+}
