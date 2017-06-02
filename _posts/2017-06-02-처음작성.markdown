@@ -1,0 +1,7 @@
+---
+title: 처음작성
+layout: post
+category: linux
+tags: [linux, ubuntu, network, ip]
+---
+처음으로 작성해 봅니다.
