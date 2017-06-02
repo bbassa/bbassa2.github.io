@@ -1,5 +1,5 @@
 ---
-title: 처음작성
+title: 최대리가 첨음 작성
 layout: post
 category: linux
 tags: [linux, ubuntu, network, ip]
