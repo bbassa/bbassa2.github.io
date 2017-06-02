@@ -1,0 +1,27 @@
+---
+title: Git - 기본개념
+layout: post
+category: git
+tags: [git, vcs, tools]
+---
+## Snapshot
+Git은 다른 VCS 들과는 다르게 저장소의 데이터를 스냅샷의 형태로 다룬다. 개념은 아래와 같다.
+
+### 기존의 VCS들
+![image](/uploads/git/git_basic_01.png)
+
+### Git
+![image](/uploads/git/git_basic_02.png)
+
+## 특징
+1. Snapshots, Not Differences (상기 설명)
+2. Nearly Every Operation Is Local
+3. Git Has Integrity
+4. Git Generally Only Adds Data
+5. The Three States
+
+## Git 의 세가지 상태
+![image](/uploads/git/git_basic_03.png)
+1. working tree의 파일을 수정한다.
+2. 파일을 stage한다. 파일의 snapshots를 staging area에 추가한다
+3. commit을 하면 staging area의 snapshot을 그대로 가져가서 Git directory에 영구 저장한다.

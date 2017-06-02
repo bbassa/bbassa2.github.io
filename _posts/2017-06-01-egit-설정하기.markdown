@@ -1,0 +1,59 @@
+---
+title: Egit 설정하기
+layout: post
+category: git
+tags: [git, vcs, tools]
+---
+## Default clone location
+> Window > Preferences > Team > Git
+
+Default Repository folder를 바꾼다
+
+![egit01](/uploads/git/egit_01.png)
+
+
+## Author / Committer 변경
+> Window > Preferences > Team > Git > Configuration
+
+Add Entry 버튼을 클릭하여 Key - Value의 형태로 입력한다.
+
+![image](/uploads/git/egit_02.png)
+
+## Git Repository 추가
+>Window > Perspective > Open Perspective > Other > Git
+
+![image](/uploads/git/egit_03.png)
+
+Clone a Git repository
+
+![image](/uploads/git/egit_04.png)
+
+1. Clone URI - GitHub가 아닌 경우
+2. GitHub - GitHub인 경우
+
+![image](/uploads/git/egit_05.png)
+
+서버에서 URI를 복사하여 Location의 URI에 입력한다. 인증이 필요하면 Authentication을 채워 넣어야 한다.
+
+![image](/uploads/git/egit_06.png)
+
+Branch Selection 에서 `master`를 선택한다.
+
+![image](/uploads/git/egit_07.png)
+
+Local Working Directory를 지정한다.
+
+![image](/uploads/git/egit_08.png)
+
+아래와 같이 remote repository가 local repository로 복제된다.
+
+![image](/uploads/git/egit_09.png)
+
+## Git Project의 추가
+Git Repository 에서 우클릭하여 Context Menu를 팝업하고 Import Projects를 클릭한다.
+
+![image](/uploads/git/egit_10.png)
+
+여러개의 모듈이 모여 하나의 프로젝트 구성인 경우 import source에서 directory를 쳐주면 해당 프로젝트가 표시된다.
+
+![image](/uploads/git/egit_11.png)
