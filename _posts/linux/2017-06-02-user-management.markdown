@@ -16,7 +16,7 @@ tags: [linux, udemy, admin, user]
 ### 사용자 계정 정보
 - `/etc/password`
 
-```{.sh}
+```bash
 # username:password:UID:GID:comments:home_dir:shell
    root:x:0:0:root:/root:/bin/bash
 ```
@@ -60,7 +60,7 @@ tags: [linux, udemy, admin, user]
 ### 사용자 관리
 - 사용자 추가
 
-```{.sh}
+```bash
 useradd [options] username
 
 -c "COMMENT"               Comments for the account       계정의 comment
@@ -74,20 +74,20 @@ useradd [options] username
 
 - password 변경
 
-```{.sh}
+```bash
 passwd username
 ```
 
 - 사용자 삭제
 
-```{.sh}
+```bash
 # -r 을 지정해야 사용자 홈 디렉토리가 삭제
 userdel [-r] username
 ```
 
 - 사용자 변경
 
-```{.sh}
+```bash
 usermod [ options ] username
 
 -c "COMMENT"               Comments for the account       계정의 comment
@@ -103,31 +103,31 @@ usermod [ options ] username
 ### 사용자 그룹
 - `/etc/group`
 
-```{.sh}
+```bash
 # group_name:password:GID:account1, accountN
 root:x:0:
 ```
 
 - 사용자 그룹 보기
 
-```{.sh}
+```bash
 group root
 ```
 
 - 사용자 그룹 추가
 
-```{.sh}
+```bash
 groupadd [options] group_name
 ```
 
 - 사용자 그룹 삭제
 
-```{.sh}
+```bash
 groupdel group_name
 ```
 
 - 사용자 그룹 변경
-```{.sh}
+```bash
 groupmod [options] group_name
 
 -g GID                Change the group ID to GID
