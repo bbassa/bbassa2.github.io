@@ -1,7 +1,6 @@
 # Site settings
-title: repetentia
-description: "웹기반의 자바 프로그램 위주의 메모렌덤"
-url: "http://pirrip.github.io"
+title: '빠싸의 블로그'
+url: "http://bbassa.github.io"
 author:
   name: "repetentia"
   email: "psm5702@naver.com"
